@@ -2,5 +2,5 @@
 
 <% @patients.each do |patient| %>
   <%= link_to patient.name, patient_path(patient) %>
-  <%= pluralize(patient.appointments.size, 'appointment') %>
+  <%= "Number of Appointments: #{patient.appointments.size}" %>
 <% end %>
