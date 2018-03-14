@@ -2,4 +2,4 @@
 
 <h2><%= @appointment.date_string %></h2>
 <h3><%= @appointment.patient.name %></h3>
-<h3><%= @appointment.doctor.name %></h3>
+<h3><%= link_to @appointment.doctor.name, @appointment.doctor %></h3>
